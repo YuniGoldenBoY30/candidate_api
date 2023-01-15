@@ -1,0 +1,97 @@
+{% load static %}
+<html>
+<head>
+    <style>
+        @page {
+            size: letter landscape;
+            margin: 1cm;
+        }
+
+        p {
+            font-family: Arial, Verdana, Geneva, sansserif, sans;
+            font-size: 12px;
+        }
+
+        td {
+            margin: 5px;
+            font-size: 14px;
+        }
+
+        h1 {
+            font-family: Courier New, monospace, monospaced, mono;
+            font-size: 20pt;
+            text-align: center;
+        }
+
+    </style>
+    <style type="text/css">
+        .vivienda {
+            padding-top: 20px;
+            text-align: left;
+            margin-left: 10px;
+        }
+
+        .vivienda_child {
+            text-align: left;
+            margin-left: 10px;
+        }
+
+        .size_20 {
+            width: 20px;
+            padding: 5px;
+        }
+
+        .size_40 {
+            width: 40px;
+            padding: 5px;
+            margin-top: 20px;
+        }
+
+        .size_60 {
+            width: 60px;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        .size_80 {
+            width: 80px;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        .size_140 {
+            width: 140px;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        .center {
+            text-align: center;
+        }
+    </style>
+    <head>
+<body>
+<div class="header">
+    <h1>Listado de candidatos por lenguaje</h1>
+</div>
+<div id="container">
+    <table>
+        <tr>
+            <td>Nombre</td>
+            <td>Tecnologias</td>
+            <td>Años</td>
+        </tr>
+        {% for datum in data %}
+        <tr>
+            <td>datum.name</td>
+            <td>datum.tech</td>
+            <td>datum.year</td>
+        </tr>
+        {% endfor%}
+    </table>
+
+</div>
+
+
+</body>
+</html>
