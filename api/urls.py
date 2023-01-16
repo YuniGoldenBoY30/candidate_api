@@ -2,8 +2,8 @@ from django.urls import path
 
 from rest_framework import routers
 
-from .viewsets import CandidateViewSet, TechViewSet
 from .views import ExportPDF
+from .viewsets import CandidateViewSet, TechViewSet
 
 router = routers.SimpleRouter()
 

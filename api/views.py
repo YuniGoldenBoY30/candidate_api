@@ -16,4 +16,4 @@ class ExportPDF(APIView):
                "tech": instance.title} for candidate_techs in
               CandidateTechs.objects.filter(tech=instance).all().order_by('-years')]
 
-        return Export.export_pdf(lc)
+        return Export.export_pdf_(lc)
