@@ -99,7 +99,7 @@ class CandidateViewSet(viewsets.ModelViewSet):
                 "age": candidate.age,
                 "gender": candidate.gender,
                 "techs": [{"title": Techs.objects.get(id=candidate_techs.tech_id).title, "years": candidate_techs.years}
-                          for candidate_techs in CandidateTechs.objects.filter(candidate=candidate).all()]
+                          for candidate_techs in CandidateTechs.objects.all()]
             } for candidate in self.queryset]
             return Response(lc, status=status.HTTP_200_OK)
         except Exception as e:
