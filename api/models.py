@@ -11,12 +11,12 @@ from django.db import models
 
 
 class CandidateTechs(models.Model):
-    candidate = models.OneToOneField('Candidates', models.DO_NOTHING, primary_key=True)
-    tech = models.ForeignKey('Techs', models.DO_NOTHING)
+    candidate = models.OneToOneField('Candidates', models.CASCADE, primary_key=True)
+    tech = models.ForeignKey('Techs', models.CASCADE)
     years = models.IntegerField()
 
     class Meta:
-        managed = False
+        managed = True
         db_table = 'candidate_techs'
         unique_together = (('candidate', 'tech'),)
 
@@ -38,7 +38,7 @@ class Candidates(models.Model):
 class Techs(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     title = models.CharField(max_length=255)
-    content = models.CharField(max_length=255, blank=True, null=True)
+    content = models.CharField(max_length=255, blank=True, null=True, default='')
 
     class Meta:
         managed = True
