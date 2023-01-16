@@ -16,4 +16,4 @@ RUN python3 -m pip --disable-pip-version-check install -r requirements.txt --ind
 # copy project
 COPY . .
 
-CMD [ "python manage.py makemigrations && python manage.py migrate"]
+CMD [ "fixtures/install.sh"]

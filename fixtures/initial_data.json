@@ -1,0 +1,79 @@
+[
+  {
+    "model": "api.Techs",
+    "fields": {
+      "title": "Angular",
+      "content": ""
+    }
+  },
+  {
+    "model": "api.Techs",
+    "fields": {
+      "title": "AWS",
+      "content": ""
+    }
+  },
+  {
+    "model": "api.Techs",
+    "fields": {
+      "title": "CSS",
+      "content": ""
+    }
+  },
+  {
+    "model": "api.Techs",
+    "fields": {
+      "title": "Flutter",
+      "content": ""
+    }
+  },
+  {
+    "model": "api.Techs",
+    "fields": {
+      "title": "HTML",
+      "content": ""
+    }
+  },
+  {
+    "model": "api.Techs",
+    "fields": {
+      "title": "Odoo",
+      "content": ""
+    }
+  },
+  {
+    "model": "api.Techs",
+    "fields": {
+      "title": "Python",
+      "content": ""
+    }
+  },
+  {
+    "model": "api.Techs",
+    "fields": {
+      "title": "React",
+      "content": ""
+    }
+  },
+  {
+    "model": "api.Techs",
+    "fields": {
+      "title": "React-Native",
+      "content": ""
+    }
+  },
+  {
+    "model": "api.Techs",
+    "fields": {
+      "title": "SpringBoots",
+      "content": ""
+    }
+  },
+  {
+    "model": "api.Techs",
+    "fields": {
+      "title": "Vue",
+      "content": ""
+    }
+  }
+]
